@@ -1,10 +1,14 @@
 # **Order-to-Cash application**
 
-The purpose of the application is to manage a sales cycle (of physical goods), also known Order to Cash. The users can manage the whole cycle from placing an order to receiving payment from the customer. The process flow consists of:
+The purpose of the application is to manage a sales cycle (of physical goods), also known Order to Cash. The users can manage the whole cycle from placing an order to receiving payment from the customer. 
+
+The relevant activities of the application can be described a process flow. The process flow consists of:
 1. Customer Service placing an Order to a customer: Order to document is created in Orders table
 2. Logistics creates a delivery for an open Order: Delivery document is created in Deliveries table
 3. Invoicing creates an Invoice for delivered goods: Invoice document is created in Invoices table
 4. Invocing receives customer's payment for the Invoice: payments is created to Payments table
+
+The user has to sign in to the application. Him/her to perform an activity he/she has to have a required role assigned the his/her user. E.g. user doing the invoicing has to have Invocing role for his/her user.
 
 The below picture describes the conceptual model of the application.
 
