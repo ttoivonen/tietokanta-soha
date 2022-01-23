@@ -8,6 +8,9 @@ The purpose of the application is to manage a sales cycle (of physical goods), a
 
 The below picture describes the conceptual model of the application.
 
+![concept](/documentation/concept_20220123.png)
+
+Each process (orange box) has an output document (blue shape) that is stored in a database. The processes, "activities", require using data from tables. E.g. to create a new Order, the applications looks up Customers and Materials tables to build the order as well as the user creating the order has to have Customer Service role in Roles_MD table.
 
 The application uses the following tables to store data:
 - Customers_MD: Master Data of Customers, e.g. customer name, address etc.
